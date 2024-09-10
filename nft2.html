@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="NFT Marketplace for buying and selling NFTs. Connect your wallet to get started.">
+    <meta name="keywords" content="NFT, Marketplace, Blockchain, Ethereum">
+    <title>NFT Marketplace</title>
+    <link rel="stylesheet" href="nft2.css">
+    <script src="https://cdn.jsdelivr.net/npm/web3@1.5.2/dist/web3.min.js"></script>
+    <script src="app.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>NFT Marketplace</h1>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#buy">Buy NFT</a>
+            <a href="#sell">Sell NFT</a>
+            <a href="#list">Available NFTs</a>
+            <a href="#login">Login</a>
+            <a href="#register">Register</a>
+        </nav>
+    </header>
+    
+    <main>
+        <section id="home">
+            <h2>Welcome to the NFT Marketplace</h2>
+            <p>Connect your wallet to start buying and selling NFTs.</p>
+            <button id="connectWallet" aria-label="Connect your wallet">Connect Wallet</button>
+            <div id="walletAddress">Not connected</div>
+        </section>
+
+        <section id="buy">
+            <h2>Buy NFT</h2>
+            <input type="text" id="buyTokenId" placeholder="Token ID" aria-label="Token ID to buy">
+            <button id="buyButton" aria-label="Buy NFT">Buy</button>
+        </section>
+
+        <section id="sell">
+            <h2>Sell NFT</h2>
+            <input type="text" id="sellTokenId" placeholder="Token ID" aria-label="Token ID to sell">
+            <input type="text" id="sellPrice" placeholder="Price in ETH" aria-label="Price in ETH">
+            <button id="sellButton" aria-label="Sell NFT">Sell</button>
+        </section>
+
+        <section id="list">
+            <h2>Available NFTs</h2>
+            <div id="nftGallery" class="nft-gallery">
+                <!-- NFTs will be dynamically inserted here -->
+            </div>
+        </section>
+
+        <section id="login" class="auth-section">
+            <h2>Login</h2>
+            <form id="loginForm">
+                <input type="email" id="loginEmail" placeholder="Email" required aria-label="Email">
+                <input type="password" id="loginPassword" placeholder="Password" required aria-label="Password">
+                <button type="submit" aria-label="Login">Login</button>
+            </form>
+        </section>
+
+        <section id="register" class="auth-section">
+            <h2>Register</h2>
+            <form id="registerForm">
+                <input type="email" id="registerEmail" placeholder="Email" required aria-label="Email">
+                <input type="password" id="registerPassword" placeholder="Password" required aria-label="Password">
+                <button type="submit" aria-label="Register">Register</button>
+            </form>
+        </section>
+    </main>
+</body>
+</html>

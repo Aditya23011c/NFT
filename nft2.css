@@ -1,0 +1,130 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav {
+    margin-top: 1rem;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 1rem;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: 1rem;
+}
+
+section {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 1rem 0;
+    padding: 1rem;
+}
+
+section h2 {
+    margin-top: 0;
+}
+
+button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+input[type="text"], input[type="email"], input[type="password"] {
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    width: calc(100% - 2.5rem);
+    margin-right: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+#walletAddress {
+    margin-top: 1rem;
+    font-weight: bold;
+}
+
+.nft-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin-top: 20px;
+}
+
+.nft-item {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    width: 200px;
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.nft-item img {
+    width: 100%;
+    height: auto;
+}
+
+.nft-item .info {
+    padding: 8px;
+    background-color: #f9f9f9;
+    border-top: 1px solid #ddd;
+}
+
+.info p {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+.auth-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.auth-section form {
+    width: 100%;
+    max-width: 400px;
+}
+
+.auth-section form input[type="email"], 
+.auth-section form input[type="password"] {
+    margin-bottom: 1rem;
+}
+
+.auth-section form button {
+    width: 100%;
+}
